@@ -1,22 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
-h4 {
-  color: #ff0000;
-  font-weight: normal;
+.container {
+  max-width: 100%;
+  min-width: 320px;
 }
-.centered {
+.header {
+  background: url(../img/hbg.jpg) top center no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 0 0 240px 0;
+}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 130px 0;
+}
+.header_menu ul {
+  list-style: none;
+  display: flex;
+}
+.header_menu ul li {
+  margin: 0 20px;
+}
+.header_menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header_menu ul li a:hover {
+  text-decoration: underline;
+}
+.header h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.header h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 90px;
+}
+.header_button {
   text-align: center;
 }
-.font {
-  font-size: 32px;
-  font-weight: bold;
+.header_button a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid #fb414e;
+  padding: 10px 25px;
 }
-.block {
-  width: 400px;
-  border: 3px solid #00ff00;
-  margin: 100px 30px 50px 50px;
-  padding: 30px 40px 100px 50px;
-  background: url(../img/logo.png) center center no-repeat;
-  color: #000000;
+.header_button a:hover {
+  background: #fb414e;
 }
